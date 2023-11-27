@@ -3,7 +3,7 @@ const somarDoisNumeros = function somarDoisNumeros(num1, num2) {
     return resultado;
 }
 
-const subtrairDoisNUmeros = function subtrairDoisNUmeros(num1, num2) {
+const subtrairDoisNumeros = function subtrairDoisNumeros(num1, num2) {
     const resultado = num1 - num2;
     return resultado;
 }
@@ -16,7 +16,7 @@ const dividirDoisNumeros = (num1, num2) => num1 / num2;
 
 module.exports = {
     somarDoisNumeros,
-    subtrairDoisNUmeros,
+    subtrairDoisNumeros,
     multipliocarDoisNUmeros,
     dividirDoisNumeros
 };
