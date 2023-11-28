@@ -23,3 +23,15 @@ test('Subtrair', () => {
     console.log('Subtrair - Resultado: ', resultadoObtido);
 
 });
+
+test('Multipliocar', () => {
+
+    const num1 = 5;
+    const num2 = 10;
+    const resultadoEsperado =50;
+    const multipliocarDoisNumeros = calculadora.multipliocarDoisNumeros;
+    const resultadoObtido = multipliocarDoisNumeros(num1, num2);
+    expect(resultadoObtido).toBe(resultadoEsperado);
+    console.log('Multiplicar - Resultado: ', resultadoObtido);
+    
+});
