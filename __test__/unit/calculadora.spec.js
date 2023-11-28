@@ -28,10 +28,22 @@ test('Multipliocar', () => {
 
     const num1 = 5;
     const num2 = 10;
-    const resultadoEsperado =50;
+    const resultadoEsperado = 50;
     const multipliocarDoisNumeros = calculadora.multipliocarDoisNumeros;
     const resultadoObtido = multipliocarDoisNumeros(num1, num2);
     expect(resultadoObtido).toBe(resultadoEsperado);
     console.log('Multiplicar - Resultado: ', resultadoObtido);
+    
+});
+
+test('Dividir', () => {
+
+    const num1 = 10;
+    const num2 = 2;
+    const resultadoEsperado = 5;
+    const dividirDoisNumeros = calculadora.dividirDoisNumeros;
+    const resultadoObitido = dividirDoisNumeros(num1, num2);
+    expect(resultadoObitido).toBe(resultadoEsperado);
+    console.log('Dividir - Resultado: ', resultadoObitido);
     
 });
