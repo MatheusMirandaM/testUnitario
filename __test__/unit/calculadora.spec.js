@@ -26,9 +26,9 @@ test('Subtrair', () => {
 
 test('Multipliocar', () => {
 
-    const num1 = 5;
-    const num2 = 10;
-    const resultadoEsperado = 50;
+    const num1 = 3;
+    const num2 = 7;
+    const resultadoEsperado = 21;
     const multipliocarDoisNumeros = calculadora.multipliocarDoisNumeros;
     const resultadoObtido = multipliocarDoisNumeros(num1, num2);
     expect(resultadoObtido).toBe(resultadoEsperado);
@@ -38,9 +38,9 @@ test('Multipliocar', () => {
 
 test('Dividir', () => {
 
-    const num1 = 10;
-    const num2 = 2;
-    const resultadoEsperado = 5;
+    const num1 = 27;
+    const num2 = 9;
+    const resultadoEsperado = 3;
     const dividirDoisNumeros = calculadora.dividirDoisNumeros;
     const resultadoObitido = dividirDoisNumeros(num1, num2);
     expect(resultadoObitido).toBe(resultadoEsperado);
