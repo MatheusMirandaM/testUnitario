@@ -1,5 +1,5 @@
 const calculadora = require('../../src/calculadora');
-const massaTestesCsv = require('../../vendors/csv/massaDivisao.csv');
+const massaDivisaoJson = require('../../vendors/json/massaDivisao.js');
 
 test('Somar', () => {
 
@@ -69,12 +69,12 @@ test.each(massaDivisao)('Dividir - Massa de Divisao', (num1, num2, resultadoEspe
     
 });
 
-test.each(massaTestesCsv.array.map(elemento => [
+test.each(massaDivisaoJson.array.map(elemento => [
     elemento.num1, 
-    num2,
-    resultadoEsperado
+    elemento.num2,
+    elemento.resultadoEsperado
 ]))
-('Dividir - Massa de Testes CSV', (num1, num2, resultadoEsperado) => {
+('Dividir - Massa de Testes Json', (num1, num2, resultadoEsperado) => {
 
     const dividirDoisNumeros = calculadora.dividirDoisNumeros;
     const resultadoObitido = dividirDoisNumeros(num1, num2);
